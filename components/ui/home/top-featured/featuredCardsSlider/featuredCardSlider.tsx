@@ -12,10 +12,41 @@ export default function FeaturedCardSlider(props) {
   const theme = useTheme();
   const ltsm = useMediaQuery(theme.breakpoints.down("sm"));
   const params = {
-    slidesPerView: '3',
       autoplay: {
         delay: 2500,
         disableOnInteraction: false
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        1224: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        989: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 2
+        },
+        260: {
+          slidesPerView: 1,
+          spaceBetween: 2
+        },
+  
+        centeredSlides: true
       },
 
   };

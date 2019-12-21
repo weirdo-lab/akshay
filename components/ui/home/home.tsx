@@ -19,11 +19,13 @@ export default function Home() {
     <div className="">
       <Box display="flex" flexDirection="column">
         <TopSection />
+        <div className="tb-container--stretched">
         <div className="tb-padding--24"></div>
         <TopFeatured />
         <div className="tb-padding--24"></div>
         <Whyus />
         <div className="tb-padding--24"></div>
+        </div>
 
         <Footer />
       </Box>
