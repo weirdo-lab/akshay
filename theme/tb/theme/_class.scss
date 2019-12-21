@@ -1,0 +1,23 @@
+@import "./variables";
+// @debug $pl-color-black-alpha-map;
+
+@each $colorKey in map-keys($tb-theme-map) {
+  .tb-theme--#{$colorKey} {
+    color: (map-get($map: $tb-theme-map, $key: $colorKey));
+  }
+
+  .tb-theme-bg--#{$colorKey} {
+    background-color: map-get($map: $tb-theme-map, $key: $colorKey);
+  }
+  .tb-theme-bg--#{$colorKey}-i {
+    background-color: map-get($map: $tb-theme-map, $key: $colorKey) !important;
+  }
+  // .tb-theme--#{$colorKey}-alpha {
+  //   color: rgba(map-get($map: $tb-theme-map, $key: $colorKey), 0.2);
+  // }
+
+  // .tb-theme-bg--#{$colorKey}-alpha {
+  //   background-color: rgba(map-get($map: $tb-theme-map, $key: $colorKey), 0.06);
+  // }
+}
+
